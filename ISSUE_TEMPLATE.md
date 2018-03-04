@@ -11,13 +11,13 @@ Someting like, **"Lesson 3. Can't make form sending request"** is fine.*
 
 Event is not getting fired even when I attached it.
 
-Steps to reproduce:  
+Steps to reproduce:
 
-given:  
+given:
 input element inside of the form
-when:  
+when:
 I'm adding event listener to the input
-then:  
+then:
 It should be attached and fire console.log on the events
 
 **2. Is it in the code?** 
