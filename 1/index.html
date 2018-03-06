@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ihor Skrypnyk">
+  <title>Task # 1</title>
+  <script>
+    function topFunction() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</head>
+
+<body>
+  <p>
+    <h1 style="background-color: lightblue; text-align:center; color:hsla(0, 4%, 5%, 0.932)">Task # 1 page</h1>
+  </p>
+  <div>
+    <img src="D:\Courses\FrontEnd\Ihor.Skrypnyk\1\2000px-HTML5_logo_and_wordmark.svg.png" width="145" height="145" alt=“LogoHtml”>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png"
+      width="105" height="145" alt=“LogoCss” style="padding: 0px 50px 0px 30px;">
+    <img src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" width="105" height="145" alt=“LogoJs”>
+  </div>
+  <br>
+  <br>
+  <article>
+    <p>
+      <strong>HTML</strong> is really a very simple language. It consists of ordinary text, with commands that are enclosed by "
+      < " and ">" characters, or bewteen an "&" and a ";". You don't really need to know much
+        <strong>HTML</strong> to create a page, because you can copy bits of
+        <strong>HTML</strong> from other pages that do what you want, then change the text! </p>
+
+    <p>This page shows on the left as it appears in your browser, and the corresponding
+      <strong>HTML</strong> code appears on the right. The
+      <strong>HTML</strong> commands are linked to explanations of what they do.</p>
+    <p>Line Breaks
+      <strong>HTML</strong> doesn't normally use line breaks for ordinary text. A white space of any size is treated as a single
+      space. This is because the author of the page has no way of knowing the size of the reader's screen, or what size type
+      they will have their browser set for. If you want to put a line break at a particular place, you can use the &#60br>
+      command, or, for a paragraph break, the "&#60P>" command, which will insert a blank line. The heading command ("&#60H4></H4>")
+      puts a blank line above and below the heading text.
+      <p>Starting and Stopping Commands Most
+        <strong>HTML</strong> commands come in pairs: for example, "&#60H4>" marks the beginning of a size 4 heading, and "&#60/H4>"
+        marks the end of it. The closing command is always the same as the opening command, except for the addition of the
+        "/". Modifiers are sometimes included along with the basic command, inside the opening command's &#60>. The modifier
+        does not need to be repeated in the closing command.
+        <h1>This is a size "1" heading </h1>
+        <h2>This is a size "2" heading </h2>
+        <h3>This is a size "3" heading </h3>
+        <h4>This is a size "4" heading </h4>
+        <h5>This is a size "5" heading </h5>
+        <h6>This is a size "6" heading </h6>
+      </p>
+  </article>
+  <hr>
+  <table>
+    <tr>
+      <th>Team</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>FC Arsenal</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>FC Crvena Zvezda</td>
+      <td>9</td>
+      <tr>
+        <td>FC Koln</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>FC Bate</td>
+        <td>5</td>
+      </tr>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <em>Qualified 1&2</em>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <hr>
+  <ol type="1">
+    <li>Arsenal</li>
+    <li>Crvena Zvezda</li>
+    <li>Koln</li>
+    <li>Bate</li>
+  </ol>
+  <hr>
+  <form>
+    User name:
+    <br>
+    <input type="text" name="username">
+    <br> User password:
+    <br>
+    <input type="password" name="psw">
+  </form>
+  <hr>
+  <textarea rows="4" cols="100">
+    The &#60textarea> tag defines a multi-line text input control. A text area can hold an unlimited number of characters, and
+    the text renders in a fixed-width font (usually Courier). The size of a text area can be specified by the cols and rows
+    attributes, or even better; through CSS' height and width properties.
+  </textarea>
+  <hr>
+  <select>
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JS">JavaScript</option>
+    <option value="PHP">PHP</option>
+  </select>
+  <hr>
+  <form action="">
+    <input type="radio" name="gender" value="male"> Male
+    <br>
+    <input type="radio" name="gender" value="female"> Female
+    <br>
+    <input type="radio" name="gender" value="other"> Other
+  </form>
+  <hr>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <br/>
+  <br/>
+  <br/>
+  <footer style="position: fixed;  
+                  left: 0; bottom: 0; 
+                  width: 100%; 
+                  background-color:lightblue; 
+                  color:black; 
+                  text-align: center;">
+    Created by Ihor</footer>
+
+</body>
+
+</html>
