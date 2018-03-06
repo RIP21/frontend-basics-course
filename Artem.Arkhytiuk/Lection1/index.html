@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple HTML page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="col-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwh5opH4IzU6fEeQzMMepg3borhYHkImTz-NXn5HOyjfszDv1lw" alt="picture of canguru">
+      </div>
+      <div class="col-4">
+        <h1>HTML</h1>
+      </div>
+      <div class="col-4">s
+        <img src="horse_1x.png" alt="picture of horse">
+      </div>
+    </div>
+  </header>
+  
+  <article>
+    <p>HTML is really a very simple language. It consists of ordinary text, with commands that are enclosed by "&lt;" and "&gt;"
+      characters, or bewteen an "&" and a ";". You don't really need to know much HTML to create a page, because you can
+      copy bits of HTML from other pages that do what you want, then change the text!</p>
+    <p>This page shows on the left as it appears in your browser, and the corresponding HTML code appears on the right. The
+      HTML commands are linked to explanations of what they do.</p>
+
+    <h2>Line Breaks </h2>
+    <p>HTML doesn't normally use line breaks for ordinary text. A white space of any size is treated as a single space. This
+      is because the author of the page has no way of knowing the size of the reader's screen, or what size type they will
+      have their browser set for.
+      <br>If you want to put a line break at a particular place, you can use the "&lt;BR&gt;" command, or, for a paragraph break,
+      the "&lt;P&gt;" command, which will insert a blank line. The heading command ("&lt;H1&gt;&lt;/H1&gt;") puts a blank
+      line above and below the heading text.</p>
+
+    <h2>Starting and Stopping Commands</h2>
+    <p>Most HTML commands come in pairs: for example, "&lt;H4&gt;" marks the beginning of a size 4 heading, and "&lt;/H4&gt;"
+      marks the end of it. The closing command is always the same as the opening command, except for the addition of the
+      "/".
+      <br>Modifiers are sometimes included along with the basic command, inside the opening command's &lt; &gt;. The modifier
+      does not need to be repeated in the closing command.</p>
+    <h1>This is a size "1" heading</h1>
+    <h2>This is a size "2" heading</h2>
+    <h3>This is a size "3" heading</h3>
+    <h4>This is a size "4" heading</h4>
+    <h5>This is a size "5" heading</h5>
+    <h6>This is a size "6" heading</h6>
+  </article>
+  <hr>
+  <table style="margin: auto; border: 2px solid gray;">
+    <tr>
+      <td colspan="2">This is my table:</td>
+    </tr>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+    <tr>
+      <td>Cell 3</td>
+      <td>Cell 4</td>
+    </tr>
+    <tr>
+      <td>Cell 5</td>
+      <td>Cell 6</td>
+    </tr>
+  </table>
+  <hr>
+  <form>
+    <h3>Here is a text field:</h3>
+    <input type="text" placeholder="Put text here!">
+    <h3>Here is a password field:</h3>
+    <input type="password" placeholder="Put password here">
+  </form>
+  <div class="row">
+    <div class="col-6">
+      <h3>What is tyour favorite mall in Krakow:</h3>
+      <form>
+        <input type="radio" name="places" value="krakowska" id="krakowska">
+        <label for="krakowska">Krakowska</label>
+        <br>
+        <input type="radio" name="places" value="bonarka" id="bonarka">
+        <label for="bonarka">Bonarka</label>
+        <br>
+        <input type="radio" name="places" value="kazimierz" id="kazimierz">
+        <label for="krakowska">Kazimierz</label>
+        <br>
+      </form>
+    </div>
+    <div class="col-6">
+      <form>
+        <h3>What do you usually by in malls?</h3>
+        <select>
+          <option>Products</option>
+          <option>Closes</option>
+          <option>Electronics</option>
+          <option>Nothing</option>
+        </select>
+      </form>
+    </div>
+  </div>
+  <div>
+    <h3>Additional comments:</h3>
+    <textarea rows="10" cols="45"></textarea>
+    <br>
+    <button>SUBMIT</button>
+  </div>
+
+  <footer>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </footer>
+</body>
+
+</html>
