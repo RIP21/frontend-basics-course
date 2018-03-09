@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+    line-height: 1.7em;
+    margin:0px;
+}
+paragraph {
+    font-family: serif;
+}
+header {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: indigo;
+    .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    }
+.container {
+widt:500px;
+}
+
