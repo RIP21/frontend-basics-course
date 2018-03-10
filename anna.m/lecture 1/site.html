@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Anna.Melnyk.Lecture One</title>
+
+        <article>
+            <header>
+
+                <h1> Text </h1>
+            </header>
+            <p> HTML is really a very simple language. It consists of ordinary text, with commands that are enclosed by " &lt;"
+                and &gt;">" characters, or bewteen an "&" and a ";".</p>
+            <p> You don't really need to know much HTML to create a page, because you can copy bits of HTML from other pages
+                that do what you want, then change the text!</p>
+            <p> This page shows on the left as it appears in your browser, and the corresponding HTML code appears on the right.
+                The HTML commands are linked to explanations of what they do.</p>
+            <p>
+                <h1>Line Breaks</h1>
+            </p>
+            <p>HTML doesn't normally use line breaks for ordinary text. A white space of any size is treated as a single space.
+                This is because the author of the page has no way of knowing the size of the reader's screen, or what size
+                type they will have their browser set for.If you want to put a line break at a particular place, you can
+                use the "
+                <BR>" command, or, for a paragraph break, the "
+                <P>" command, which will insert a blank line. The heading command puts a blank line above and below the heading
+                    text.
+                </p>
+                <h1> Starting and Stopping Commands</h1>
+            </p> Most HTML commands come in pairs: for example,
+            <H4> marks the beginning of a size 4 heading, and </H4> marks the end of it. The closing command is always the same
+            as the opening command, except for the addition of the "/". Modifiers are sometimes included along with the basic
+            command, inside the opening command's. The modifier does not need to be repeated in the closing command.</p>
+            <p>
+                <li>This is a size "1" heading</li>
+                <li> This is a size "2" heading</li>
+                <li>This is a size "3" heading</li>
+                <li>This is a size "4" heading</li>
+                <li>This is a size "5" heading</li>
+                <li>This is a size "6" heading</li>
+            </p>
+        </article>
+        </div>
+        <div>
+            <style>
+                table,
+                th,
+                td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                th,
+                td {
+                    padding: 5px;
+                    text-align: left;
+                }
+            </style>
+    </head>
+
+    <body>
+
+        <h2>Ice cream table</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Flavors</th>
+            </tr>
+            <tr>
+                <td>Mmm</td>
+                <td>Strawberry</td>
+                <td>Caramel</td>
+            </tr>
+        </table>
+
+        <div>
+            <h2>Choose One</h2>
+            <select>
+                <optgroup label="Flavors">
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="caramel">caramel</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <header>
+                <h1>Form</h1>
+            </header>
+            <form>
+                name
+                <br>
+                <input type="text" name="name">
+                <br> User password:
+                <br>
+                <input type="password" name="psw">
+            </form>
+        </div>
+        <form action="/action_page.php">
+            <input type="radio" name="flavor" value="pear" checked> Pear
+            <br>
+            <input type="radio" name="flavor" value="apple"> Apple
+            <br>
+            <input type="radio" name="flavor" value="Caramel"> Caramel
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <article>
+            <h2>Here is a list:</h2>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+        </article>
+        <div>
+            <img src="ice cream.jpeg" alt="Ice cream" width="400" height="500">
+        </div>
+        </head>
+
+    </body>
+
+</html>
