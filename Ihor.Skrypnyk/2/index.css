@@ -1,0 +1,173 @@
+body {
+  background-color: rgb(153, 153, 153);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+  padding: 10px 20px;
+}
+
+a:hover {
+  color: #076b4a;
+}
+
+a:active {
+  color: #1c0080;
+}
+
+header {
+  overflow: hidden;
+  width: 100vw;
+}
+
+main {
+  overflow: hidden;
+}
+
+nav {
+  background-color: #e08524;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+figure {
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+
+.imgHeader {
+  max-height: 200px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+article {
+  font-family: 'Karma', serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  padding-top: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  clear: both;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+img .imgFirst {
+  width: 100vw;
+}
+
+.asideRight {
+  float: right;
+  margin: 7px 7px 7px 0;
+  max-width: 50%;
+}
+
+.asideLeft {
+  float: left;
+  margin: 7px 7px 7px 0;
+  max-width: 50%;
+}
+
+pre {
+  overflow: hidden;
+  background-color: #466770;
+  border-right: 5px black solid;
+  border-left: 5px black solid;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+  border: 5px black solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 96vw;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #e08524;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.logos {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+@media (max-width: 800px) {
+
+  body {
+    font-size: 12px;
+    float: none;
+    max-width: 100%;
+  }
+  pre {
+    font-size: 10px;
+    display: block;
+    margin: auto;
+    float: none;
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  article {
+    font-size: 12px;
+    float: none;
+  }
+
+  .asideLeft,
+  .asideRight {
+    float: none;
+    max-width: 100%;
+    display: block;
+  }
+
+  nav {
+    max-width: 100%;
+  }
+}
