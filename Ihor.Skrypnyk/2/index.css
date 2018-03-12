@@ -1,24 +1,30 @@
 body {
   background-color: rgb(153, 153, 153);
   font-family: 'Lato', sans-serif;
-  }
-
-a{
-	text-decoration: none;
-  color:#222222;
-  padding:10px 20px;
+  margin: 0;
 }
 
-a:hover{
-	color:#076b4a;
+a {
+  text-decoration: none;
+  color: #222222;
+  padding: 10px 20px;
 }
 
-a:active{
-	color:#1c0080;
+a:hover {
+  color: #076b4a;
+}
+
+a:active {
+  color: #1c0080;
 }
 
 header {
+  overflow: hidden;
+  width: 100vw;
+}
 
+main {
+  overflow: hidden;
 }
 
 nav {
@@ -29,32 +35,35 @@ nav {
   word-spacing: 3px;
   font-size: 24px;
   font-weight: bolder;
-  margin: auto;
-  padding:10px 20px;
+  margin: 0;
+  padding: 10px 20px;
+  overflow: hidden;
 }
 
 figure {
   display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
   margin-left: 0px;
   margin-right: 0px;
+  overflow: hidden;
 }
 
 .imgHeader {
   max-height: 200px;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 article {
   font-family: 'Karma', serif;
-  font-size:18px;
-  font-weight:bold;
-  line-height:1.6em;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
   padding: 1em;
+  overflow: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -71,12 +80,11 @@ h2 {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 img .imgFirst {
-  max-width: 100%;
-
+  width: 100vw;
 }
 
 .asideRight {
@@ -92,23 +100,27 @@ img .imgFirst {
 }
 
 pre {
+  overflow: hidden;
   background-color: #466770;
-  border-right:5px black solid;
-	border-left:5px black solid;
-	border-top:5px black solid;
-	border-bottom:5px black solid;
-	border-width:3px;
-	border-bottom-width:10px;
-	border-top-style:dotted;
-	border: 5px black solid;
-	padding-top:20px;
-	padding-bottom:20px;
-	padding-right:20px;
-  padding-left:20px;
+  border-right: 5px black solid;
+  border-left: 5px black solid;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+  border: 5px black solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 96vw;
   right: 0;
   bottom: 0;
   left: 0;
@@ -120,19 +132,15 @@ footer {
   word-spacing: 3px;
   font-size: 18px;
   font-weight: bolder;
-  margin: auto;
-  clear: both;
-  display: inline-block;
-  width: 100%;
 }
 
 .logos {
   max-width: 32px;
   max-height: 32px;
-  float: right;
 }
 
 @media (max-width: 800px) {
+
   body {
     font-size: 12px;
     float: none;
@@ -146,18 +154,20 @@ footer {
     width: 100%;
     padding-right: 0%;
   }
+
   article {
     font-size: 12px;
     float: none;
   }
-  .asideLeft, .asideRight {
+
+  .asideLeft,
+  .asideRight {
     float: none;
     max-width: 100%;
     display: block;
   }
+
   nav {
     max-width: 100%;
   }
-
 }
-
