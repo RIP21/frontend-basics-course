@@ -1,0 +1,64 @@
+.header--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.heading--style {
+  font-size: 200%;
+  font: 'Acme', sans-serif;
+  color: green;
+}
+
+.image--stretched {
+  min-height: 200px;
+  height: 300px;
+  width: 1360px;
+  padding: 10px;
+  margin-left: -70px;
+}
+
+.image--left_float {
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+
+.image--right_float {
+  float: right;
+  width: 700px;
+  height: 500px;
+}
+
+.pre--code_style {
+  padding: 20px;
+  max-width: 600px;
+  background: #A9A9A9;
+  border: 4px double black;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer--padding {
+  margin-top: 450px;
+  padding: 0 100px 0 100px;
+}
+
+.image_icon--right_float {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+.paragraph--with_red_line {
+  border-left: 6px solid red;
+  background-color: darkgray
+}
+
+p {
+  font-family: 'Crete Round', serif;
+}
