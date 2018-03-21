@@ -5,6 +5,9 @@
 
     <head>
         <meta charset="utf-8">
+    </head>
+
+    <body>
         <article>
             <header>
                 <h1> Text </h1>
@@ -56,70 +59,65 @@
                     text-align: left;
                 }
             </style>
-    </head>
+            <h2>Ice cream table</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Flavors</th>
+                </tr>
+                <tr>
+                    <td>Mmm</td>
+                    <td>Strawberry</td>
+                    <td>Caramel</td>
+                </tr>
+            </table>
 
-    <body>
+            <div>
+                <h2>Choose One</h2>
+                <select>
+                    <optgroup label="Flavors">
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="caramel">caramel</option>
+                    </optgroup>
+                </select>
+            </div>
 
-        <h2>Ice cream table</h2>
-        <table style="width:100%">
-            <tr>
-                <th>Name</th>
-                <th colspan="2">Flavors</th>
-            </tr>
-            <tr>
-                <td>Mmm</td>
-                <td>Strawberry</td>
-                <td>Caramel</td>
-            </tr>
-        </table>
-
-        <div>
-            <h2>Choose One</h2>
-            <select>
-                <optgroup label="Flavors">
-                    <option value="Strawberry">Strawberry</option>
-                    <option value="caramel">caramel</option>
-                </optgroup>
-            </select>
-        </div>
-
-        <div>
-            <header>
-                <h1>Form</h1>
-            </header>
-            <form>
-                name
+            <div>
+                <header>
+                    <h1>Form</h1>
+                </header>
+                <form>
+                    name
+                    <br>
+                    <input type="text" name="name">
+                    <br> User password:
+                    <br>
+                    <input type="password" name="psw">
+                </form>
+            </div>
+            <form action="/action_page.php">
+                <input type="radio" name="flavor" value="pear" checked> Pear
                 <br>
-                <input type="text" name="name">
-                <br> User password:
+                <input type="radio" name="flavor" value="apple"> Apple
                 <br>
-                <input type="password" name="psw">
+                <input type="radio" name="flavor" value="Caramel"> Caramel
+                <br>
+                <br>
+                <input type="submit">
             </form>
-        </div>
-        <form action="/action_page.php">
-            <input type="radio" name="flavor" value="pear" checked> Pear
-            <br>
-            <input type="radio" name="flavor" value="apple"> Apple
-            <br>
-            <input type="radio" name="flavor" value="Caramel"> Caramel
-            <br>
-            <br>
-            <input type="submit">
-        </form>
-        <article>
-            <h2>Here is a list:</h2>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-            </ol>
-        </article>
-        <div>
-            <img src="ice cream.jpeg" alt="Ice" width="400" height="500">
-        </div>
-        </head>
+            <article>
+                <h2>Here is a list:</h2>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            </article>
+            <div>
+                <img src="ice cream.jpeg" alt="Ice" width="400" height="500">
+            </div>
 
     </body>
 
