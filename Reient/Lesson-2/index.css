@@ -1,5 +1,35 @@
-header{
-    text-align: center;
+*{
+    outline: none;
+}
+header,footer {
+    width: 98%;
+    background-color: #fff;
+}
+header {
+    border-bottom: 2px solid silver;  
+    padding: 1%;
+    
+}
+#itlogo {
+    width: 160px;
+    float: left;
+    margin: 0px 20px 0px 20px;   
+} 
+.search {
+border-radius: 10px;
+border: 2px solid silver;
+padding: 5px;
+margin-left: 650px;
+}
+.container{
+border-top: 0px solid silver;  
+width: 1180px;
+margin: 10px auto;
+background:#EAEAEA;
+background-repeat: no-repeat;
+}
+.maincontent{
+    margin: 0 auto;
 }
 p {
     font-family: "Times New Roman", Times, serif;
@@ -11,9 +41,15 @@ H2 {
     font-size: 150%;  
     font-weight: lighter; 
    }
-#itlogo{
-    width: 200px;
-}
+pre {
+    border: 4px double black;
+    background: #D0D0D0; 
+    padding: 10px; 
+    width: 450px;
+   }
+
+
+
 .leftimg {
     float:left; 
     margin: 10px 17px 17px 0; 
@@ -22,11 +58,31 @@ H2 {
     float: right;  
     margin: 7px 0 7px 7px;
 }
-pre {
-    border: 4px double black;
-    background: #D0D0D0; 
-    padding: 10px; 
-    width: 450px;
-   }
+/*style for FOOTER*/
+footer{
+    width: 98%;
+    float: left;
+    background-color: #fafafa;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+}
+footer #rights {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 1.1em;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    }
 
- 
+footer .social img{
+    width: 30px;
+    height: 30px;
+    float: left;  
+    margin-right: 5px;
+
+    
+}
