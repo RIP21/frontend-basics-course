@@ -1,0 +1,141 @@
+/* nav,
+header,
+footer,
+main,
+figure,
+article,
+footer{
+  display: block;
+} */
+
+body{
+  margin: 0;
+}
+
+.page-header{
+  width: 100%;
+  position: fixed;
+}
+
+.page-header nav{
+  background-color: rgb(24, 211, 180); 
+}
+
+.page-header nav a{
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+
+.page-header nav a:hover{
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
+}
+
+.top-image{
+  margin: 0;
+  overflow: hidden;
+}
+
+article{
+  line-height: 1.5;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+article header h1{
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article h2{
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article p{
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-indent: 50px;
+  padding: 10px;
+  margin: 0;
+}
+
+.img-1{
+    position: relative;
+    padding-right: 20px;
+    height: 250px;
+    padding-right: 20px;
+    float: left;
+  margin: 0px; 
+  padding: 10px;
+  
+}
+
+.img-2{
+  float: right;
+  position: relative;
+  height: 150px;
+  padding: 10px;
+}
+
+.mono-text {
+  background-color: #eeecec;
+  box-shadow:  0 0 0 2px rgba(5, 56, 45, 0.856);
+  border-radius: 5px;
+  width: 615px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+.mono-text pre{
+  padding: 4px;
+  font-family: 'PT Mono', monospace;
+}
+
+footer{
+  background-color: rgb(24, 211, 180);
+  width:100%;
+}
+
+footer section{
+  display: inline-block;
+}
+
+.side-footer a{
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 30px;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(32, 32, 32);
+}
+
+.side-footer a:hover{
+    background-color: rgb(219, 241, 238);
+    color: rgb(1, 12, 2);
+}
+
+.social-networks{
+  float: right;
+  vertical-align: middle;
+  padding: 5px 2px 0 0;
+}
+
+.social-networks a{
+  display: inline-block;
+  padding: 2px;
+}
+
+.social-networks a img{
+  padding: 0;
+  height: 28px;
+}
+
