@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson1</title>
+
+
+</head>
+
+<body>
+    <h1 title="Lesson number">Lesson1</h1>
+    <hr>
+    <img src="https://showtechnica.com.ua/uploads/news-gitary-300118-image-2.jpg" alt="Image" width="1200">
+    <hr>
+    <div>
+        <p>
+            <strong>HTML</strong> is really a very simple language. It consists of ordinary text, with commands that are enclosed
+            by "
+            &lt; " and "&gt;" characters, or bewteen an "&" and a ";".
+                <br> You don't really need to know much HTML to create a page, because you can copy bits of HTML from other pages
+                that do what you want, then change the text!
+        </p>
+    </div>
+    <p align="left"> This page shows on the left as it appears in your browser, and the corresponding HTML code appears on the right. The
+        HTML commands are linked to explanations of what they do.
+    </p>
+
+    <h2>Line Breaks</h2>
+    <div>
+        <p align="left">HTML doesn't normally use line breaks for ordinary text. A white space of any size is treated as a single space.
+            This is because the author of the page has no way of knowing the size of the reader's screen, or what size type
+            they will have their browser set for. If you want to put a line break at a particular place, you can use the
+            "&lt;BR&gt;" command, or, for a paragraph break, the "&lt;P&gt;" command, which will insert a blank line. The
+            heading command ("&lt;H4&gt;&lt;/H4&gt;") puts a blank line above and below the heading text.
+        </p>
+    </div>
+    <div>
+        <p>Starting and Stopping Commands Most HTML commands come in pairs: for example, "&lt;H4&gt;" marks the beginning of
+            a size 4 heading, and "&lt;/H4&gt;" marks the end of it. The closing command is always the same as the opening
+            command, except for the addition of the "/". Modifiers are sometimes included along with the basic command, inside
+            the opening command's
+            <>. The modifier does not need to be repeated in the closing command.</p>
+    </div>
+    <br>
+    <img src="guitars.jpg" alt="Image" width="1200">
+    <br>
+    <h1>This is a size "1" heading</h1>
+    <h2>This is a size "2" heading</h2>
+    <h3>This is a size "3" heading</h3>
+    <h4>This is a size "4" heading</h4>
+    <h5>This is a size "5" heading</h5>
+    <h6>This is a size "6" heading</h6>
+    <hr>
+    <!--Form -->
+    <div>
+    <form action="process.php" method="POST">
+        <div>
+            <label>First name</label>
+            <input type="text" name="firstName">
+        </div>
+        <br>
+        <div>
+            <label>Last name</label>
+            <input type="text" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label>Free text</label>
+            <textarea name="freeText"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="female">Other</option>
+                <option value="female">Not known</option>
+                </select>
+        </div>
+        <br>
+    </form>
+</div>
+    <br>    
+    <hr>
+    <!-- table -->
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Stupid head 1</th>
+                <th>Stupid head 2</th>
+                <th>Stupid head 3</th>
+                <th>Stupid head 4</th>
+                <th>Stupid head 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A 1</td>
+                <td>B 2</td>
+                <td>C 3</td>
+                <td>D 4</td>
+                <td>E 5</td>
+            </tr>
+            <tr>
+                <td>AA 1</td>
+                <td>BB 2</td>
+                <td>CC 3</td>
+                <td>DD 4</td>
+                <td>EE 5</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+    <!--Lists-->
+    <div>
+        <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+                <li>List item 5</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <form>
+            <p>Contact</p>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email">
+                <label for="contactChoice1">Email</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="contactChoice2">Phone</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail">
+                <label for="contactChoice3">Mail</label>
+            </div>
+            <br>    
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div style="margin-top:500px"></div>
+</body>
+<footer>
+    <div>
+        <p>
+            <em>Test footer 2018</em>
+        </p>
+    </div>
+</footer>
+
+</html>
