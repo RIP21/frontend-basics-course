@@ -1,0 +1,143 @@
+nav,
+header,
+footer,
+main,
+figure,
+article,
+footer{
+  display: block;
+} 
+
+body{
+  margin: 0;
+}
+
+.page-header{
+  width: 100%;
+  position: fixed;
+  z-index:10;
+}
+
+.page-header nav{
+  background-color: rgb(24, 211, 180); 
+}
+
+.page-header nav a{
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+
+.page-header nav a:hover{
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
+}
+
+.top-image{
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+}
+
+article{
+  line-height: 1.5;
+  margin: auto;
+  max-width: 850px;
+}
+
+article header h1{
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article h2{
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article p{
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-indent: 50px;
+  padding: 10px;
+  margin: 0;
+}
+
+article img{
+  position: relative;
+  padding: 20px;
+}
+
+.img-left{
+  height: 250px;
+  float: left;
+}
+
+.img-right{
+  float: right;
+  height: 150px;
+}
+
+.mono-text {
+  background-color: #eeecec;
+  box-shadow:  0 0 0 2px rgba(5, 56, 45, 0.856);
+  border-radius: 5px;
+  width: 615px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+.mono-text pre{
+  padding: 4px;
+  font-family: 'PT Mono', monospace;
+}
+
+footer{
+  background-color: rgb(24, 211, 180);
+  width:100%;
+}
+
+footer section{
+  display: inline-block;
+}
+
+.side-footer a{
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+
+.side-footer a:hover{
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
+}
+
+.social-networks{
+  float: right;
+  vertical-align: middle;
+  padding: 5px 2px 0 0;
+}
+
+.social-networks a{
+  display: inline-block;
+  padding: 2px;
+}
+
+.social-networks a img{
+  padding: 0;
+  height: 28px;
+}
+
