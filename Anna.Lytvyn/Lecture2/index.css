@@ -1,4 +1,4 @@
-/* nav,
+nav,
 header,
 footer,
 main,
@@ -6,7 +6,7 @@ figure,
 article,
 footer{
   display: block;
-} */
+} 
 
 body{
   margin: 0;
@@ -15,6 +15,7 @@ body{
 .page-header{
   width: 100%;
   position: fixed;
+  z-index:10;
 }
 
 .page-header nav{
@@ -38,14 +39,18 @@ body{
 }
 
 .top-image{
-  margin: 0;
+  height: 200px;
   overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
 }
 
 article{
   line-height: 1.5;
-  padding-left: 17%;
-  padding-right: 17%;
+  margin: auto;
+  max-width: 850px;
 }
 
 article header h1{
@@ -67,22 +72,19 @@ article p{
   margin: 0;
 }
 
-.img-1{
-    position: relative;
-    padding-right: 20px;
-    height: 250px;
-    padding-right: 20px;
-    float: left;
-  margin: 0px; 
-  padding: 10px;
-  
+article img{
+  position: relative;
+  padding: 20px;
 }
 
-.img-2{
+.img-left{
+  height: 250px;
+  float: left;
+}
+
+.img-right{
   float: right;
-  position: relative;
   height: 150px;
-  padding: 10px;
 }
 
 .mono-text {
@@ -108,19 +110,19 @@ footer section{
 }
 
 .side-footer a{
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 30px;
-    display: inline-block;
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: rgb(32, 32, 32);
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
 }
 
 .side-footer a:hover{
-    background-color: rgb(219, 241, 238);
-    color: rgb(1, 12, 2);
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
 }
 
 .social-networks{
