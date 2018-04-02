@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
+  <link rel="stylesheet" href="../styles/index.css" type="text/css">
+  <link rel="stylesheet" href="../styles/aboutUs.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karma|Lato|Ubuntu" rel="stylesheet">
+  <title>About Us</title>
+</head>
+
+<body>
+  <!--Should be a fixed header-->
+  <header class="header--sticky">
+    <nav>
+      <a href="index.html"> Main page </a>
+      <button class="header-loginButton" onclick="document.getElementById('modal-wrapper').style.display='block'"> LOGIN </button>
+      <a href="aboutUs.html"> About us </a>
+      <a href="contactUs.html"> Contact us </a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="container top-content">
+      <h2>About us</h2>
+      <p>Welcome to our website!</p>
+      <p style="text-decoration-line: underline">Lorem ipsum dolor sit amet, dolor sit amet.</p>
+    </div>
+    <div class="main-content">
+      <div class="container text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate sed nam suscipit harum doloribus,
+          pariatur ipsam, numquam praesentium commodi dolorem, obcaecati earum enim omnis neque illum modi ad necessitatibus
+          libero. Numquam dolor quibusdam cumque quae! Amet enim quae, nam inventore odit debitis maiores labore neque earum
+          minus omnis soluta repudiandae porro, vero impedit ab eaque nesciunt explicabo aspernatur ratione consectetur praesentium
+          perferendis minima illo. Quidem vitae laboriosam eos eius? Sit ullam dicta praesentium ipsa odit. Porro perspiciatis
+          debitis architecto quasi minima laudantium officia aliquam quaerat, aperiam est aspernatur obcaecati nam necessitatibus
+          sapiente iusto quisquam reprehenderit itaque quam! Perferendis recusandae voluptate fuga odio sed suscipit tempora
+          cumque quo laboriosam, ipsum consectetur, exercitationem molestias optio neque consequatur! Incidunt explicabo
+          deserunt veniam, suscipit sed quas beatae. Facilis delectus ad labore dolorum totam, eaque, exercitationem blanditiis
+          quia aliquam, laborum est consequatur. Maxime sint perferendis nobis at, aperiam rem quos enim. Perspiciatis, sapiente
+          aspernatur?
+          <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat, dolore fuga saepe, assumenda repellat
+          quibusdam eius nobis voluptates at, voluptatum consequatur hic? Omnis non, quo pariatur quod explicabo molestiae.
+          Molestiae placeat officiis nihil odio corporis, distinctio natus quas corrupti saepe modi earum ad necessitatibus
+          totam! Debitis necessitatibus suscipit consequuntur nemo aspernatur reprehenderit aut soluta officia accusantium
+          magnam, quidem, cum fugit recusandae vel atque ipsam ipsa? Sequi earum voluptatibus, dolore impedit nulla nobis
+          ipsam odio alias dolorem officia amet quia autem odit cumque cum. Itaque nobis ducimus nam praesentium laboriosam,
+          similique commodi corrupti aspernatur necessitatibus tenetur fugit vitae optio doloribus.
+        </p>
+      </div>
+      <div class="sidebar">
+        <div class="container">
+          <img src="https://ih0.redbubble.net/image.149272353.6094/sticker,220x200-bg,ffffff-pad,220x200,ffffff.u1.jpg">
+        </div>
+        <div class="container">
+          <img src="https://vignette.wikia.nocookie.net/starwars/images/c/c0/MP-DeathStar.png/revision/latest?cb=20140412000459" style="width: 200px">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer--left">
+      <button class="footer-loginButton" onclick="document.getElementById('modal-wrapper').style.display='block'"> Login </button>
+      <a href="aboutUs.html"> About us </a>
+      <a href="contactUs.html"> Contact us </a>
+    </section>
+    <section class="footer--right">
+      <!-- should be a aligned to the right social network buttons -->
+      <a href="#">
+        <img class="footer--right logos" src="https://shop.az/site/img/svg/facebook-round.svg" />
+      </a>
+      <a href="#">
+        <img class="footer--right logos" src="http://badges.instagram.com/static/images/ig-badge-32.png" />
+      </a>
+      <a href="#">
+        <img class="footer--right logos" src="http://pngimg.com/uploads/twitter/twitter_PNG34.png" />
+      </a>
+    </section>
+  </footer>
+
+  <!-- Modal Login form -->
+
+  <div id="modal-wrapper" class="modal">
+
+    <form class="modal-content animate">
+
+      <div class="imgcontainer">
+        <span class="close" title="Close PopUp">&times;</span>
+        <h1 style="text-align:center">Login to the website</h1>
+      </div>
+
+      <div class="modal-container">
+        <input type="text" placeholder="Enter Username" name="uname">
+        <input type="password" placeholder="Enter Password" name="psw">
+        <button class="modal-button" type="submit">Login</button>
+        <input type="checkbox" style="margin:26px 30px;"> Remember me
+        <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+      </div>
+
+    </form>
+  </div>
+  <script>
+    let modal = document.getElementById('modal-wrapper');
+    let close = document.querySelector('.close');
+
+
+    function closeModal(event) {
+      if (event.target === modal || event.target === close) {
+        modal.style.display = "none";
+      }
+    }
+
+    modal.addEventListener('click', closeModal);
+
+  </script>
+</body>
+
+</html>

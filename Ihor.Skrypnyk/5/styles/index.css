@@ -1,0 +1,304 @@
+body {
+  background-color: rgb(153, 153, 153);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 1em;
+}
+
+a:hover {
+  color: #076b4a;
+}
+
+a:active {
+  color: #1c0080;
+}
+
+header {
+  overflow: hidden;
+  width: 100vw;
+  height: 50px;
+}
+
+nav {
+  background-color: #e08524;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 10px 20px;
+  overflow: hidden;
+  width: 100vw;
+}
+
+figure {
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+
+.imgHeader {
+  max-height: 200px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+[class*="star"] {
+  width: 25em;
+}
+
+article {
+  font-family: 'Karma', serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  padding-top: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  clear: both;
+}
+
+[class*="sticky"] {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+[class*="rightFloat"] {
+  float: right;
+  margin-left: 1em;
+}
+
+[class*="leftFloat"] {
+  float: left;
+  margin-right: 1em;
+}
+
+[class*="right"] {
+  align-self: flex-end;
+}
+
+[class*="left"] {
+  align-self: flex-start;
+}
+
+pre {
+  overflow: hidden;
+  background-color: #466770;
+  border-right: 5px black solid;
+  border-left: 5px black solid;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+  border: 5px black solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #e08524;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.logos {
+  width: 32px;
+  height: 32px;
+  margin-right: 1em;
+}
+
+section {
+  display: flex;
+}
+
+section a {
+  margin-right: 1em;
+}
+
+.header-loginButton,
+.footer-loginButton {
+  background-color: #e08524;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  color: #222222;
+  margin-right: 1em;
+  border: none;
+}
+
+.footer-loginButton {
+  font-size: 18px;
+}
+
+.header-loginButton:hover,
+.footer-loginButton:hover {
+  color: #076b4a;
+}
+
+.header-loginButton:active,
+.footer-loginButton:active {
+  color: #1c0080;
+}
+
+[class*="button"]:focus,
+[class*="loginButton"]:focus {
+  outline: 0;
+}
+
+/* Modal Login form */
+
+input[type=text],
+input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 26px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.modal-button {
+  background-color: #e08524;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 26px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  font-size: 20px;
+}
+
+.modal-button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 4% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+  animation: zoom 0.6s
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* responsiveness */
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  pre {
+    font-size: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-right: 0%;
+  }
+  article {
+    font-size: 12px;
+  }
+  [class*="left"],
+  [class*="right"] {
+    max-width: 100%;
+    display: block;
+  }
+  nav {
+    max-width: 100%;
+  }
+}
