@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Playground</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="./index.js"></script>
+
+</head>
+<style>
+  * {
+    font-size: 20px;
+  }
+
+  body>div {
+    padding: 1rem;
+  }
+
+</style>
+
+<body>
+  <div class="form">
+    <label>
+      Income
+      <input type="number" name="income" id="incomeInput">
+      <br>
+    </label>
+    <label>
+      Expenses
+      <input type="number" name="expenses" id="expensesInput">
+      <br>
+    </label>
+    <label>
+      Target
+      <input type="number" name="targetSum" id="targetSum">
+      <br>
+    </label>
+    <label>
+      Mounths to target
+      <input type="number" name="mounthToTarget" id="mounthToTarget">
+      <br>
+    </label>
+    <button id="calculateButton">Calculate</button>
+  </div>
+  <div id="result"></div>
+  <script>
+    const budget = {
+      income: 5000,
+      expenses: 2400,
+      targetSum: 10000,
+      mounthToTarget: 8
+    }
+
+    const incomeInput = document.querySelector("#incomeInput")
+    const expensesInput = document.querySelector("#expensesInput")
+    const calculateButton = document.querySelector("#calculateButton")
+    const result = document.querySelector("#result")
+    const targetSumInput = document.querySelector("#targetSum")
+    const mounthToTargetInput = document.querySelector("#mounthToTarget")
+
+
+    incomeInput.value = budget.income
+    expensesInput.value = budget.expenses
+    targetSumInput.value = budget.targetSum
+    mounthToTargetInput.value = budget.mounthToTarget
+
+    function onInputChange(inputEvent) {
+      const currentInput = inputEvent.target
+      budget[currentInput.name] = parseFloat(currentInput.value)
+    }
+
+    const onCalculate = () => {
+      const {
+        income,
+        expenses,
+        targetSum,
+        mounthToTarget
+      } = budget
+      if ((income - expenses) * mounthToTarget >= targetSum) {
+
+        targetMessage = "You will reach your target";
+      } else {
+        targetMessage = "You have to work on your income/expenses to reach such target";
+      }
+
+
+      result.innerHTML = `Savings per month: ${income - expenses} ` + "<br>" + targetMessage
+    }
+
+    incomeInput.addEventListener('input', onInputChange)
+    expensesInput.addEventListener('input', onInputChange)
+    calculateButton.addEventListener('click', onCalculate)
+    targetSumInput.addEventListener('input', onInputChange)
+    mounthToTarget.addEventListener('input', onInputChange)
+
+  </script>
+</body>
+
+</html>
