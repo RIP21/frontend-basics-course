@@ -1,15 +1,68 @@
 *{
     outline: none;
+    text-decoration: none;
+}
+body {
+	font-family: Arial, sans-serif;
 }
 header,footer {
     width: 98%;
     background-color: #fff;
 }
 header {
-    border-bottom: 2px solid silver;  
-    padding: 1%;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 3px solid silver;  
+    padding: 1%;  
 }
+
+    .Header_links a::before,
+    .Header_links a::after {
+        display: inline-block;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+        transition: transform 0.3s, opacity 0.2s;
+    }
+    
+    .Header_links a::before {
+        margin-right: 2px;
+        content: '[';
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    
+    .Header_links a::after {
+        margin-left: 2px;
+        content: ']';
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    
+    .Header_links a:hover::before,
+    .Header_links a:hover::after,
+    .Header_links a:focus::before,
+    .Header_links a:focus::after {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }     
+    .Article-style{
+        text-decoration: none;
+        border: 3px solid rgba(217,223,217,0.1);
+        background: #197,203,197;
+        font-family: fantasy, sans-serif;
+        font-stretch: extra-expanded;
+        font-weight: 100px; 
+        color: rgba(255,186,0, 0.89);
+        text-shadow: 2px 2px 3px rgba(217, 250, 225, 0.575);
+        margin-left: 250px;
+    }
 #itlogo {
     width: 160px;
     float: left;
@@ -19,7 +72,7 @@ header {
 border-radius: 10px;
 border: 2px solid silver;
 padding: 5px;
-margin-left: 650px;
+margin-left: 300px;
 }
 .container{
 border-top: 0px solid silver;  
