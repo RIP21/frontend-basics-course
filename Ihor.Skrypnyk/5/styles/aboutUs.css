@@ -10,6 +10,7 @@ main {
   max-width: 1024px;
   margin: 50px auto 0 auto;
 }
+
 .top-content * {
   padding: 0;
   margin: 0;
@@ -37,4 +38,13 @@ main {
 
 .main-content {
   display: flex;
+}
+
+/* Modal */
+
+.modal-container a {
+  text-decoration: none;
+  float: right;
+  margin-right: 34px;
+  margin-top: 26px;
 }

@@ -45,3 +45,12 @@
 .container--contact input:focus {
   background-color: lightblue;
 }
+
+/* Modal */
+
+.modal-container a {
+  text-decoration: none;
+  float: right;
+  margin-right: 34px;
+  margin-top: 26px;
+}

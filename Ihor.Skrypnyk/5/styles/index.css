@@ -302,3 +302,12 @@ input[type=password] {
     max-width: 100%;
   }
 }
+
+/* Modal */
+
+.modal-container a {
+  text-decoration: none;
+  float: right;
+  margin-right: 34px;
+  margin-top: 26px;
+}
