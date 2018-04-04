@@ -1,85 +1,86 @@
-nav,
-header,
-footer,
-main,
-figure,
-article,
-footer{
-  display: block;
+/*##########################Defaults#################################*/
+
+.main {
+  padding-top: 30px;
 }
 
-body{
+.flexContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
   margin: 0;
 }
 
-
 /*##########################Navbar#################################*/
 
-.pageHeader{
-  width: 100%;
+.pageHeader {
   overflow: hidden;
   position: fixed;
   z-index: 1000;
+  background-color: #292b2c;
+  width: 100%;
 }
 
-.pageHeader nav{
-  background-color: #c7c9cc; 
-}
-
-.pageHeader nav a{
+.pageHeader nav a {
   text-decoration: none;
   padding: 10px;
-  display: inline-block;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
-  color: #818384;
+  color: #ffffff;
+  font-family: sans-serif;
 }
 
-header.pageHeader nav a:hover{
+.navigationRight {
+  margin-left: auto;
+}
+
+header.pageHeader nav a:hover {
   background-color: white;
   color: black;
 }
 
-.topFigure{
+.topFigure {
   margin: 0;
-  padding-top: 30px;
   overflow: hidden;
 }
 
 /*##########################Article#################################*/
 
-article{
+article {
   line-height: 1.5;
-  padding-left:15%;
+  padding-left: 15%;
   padding-right: 15%;
 }
 
-article header h1{
+article header h1 {
   text-align: center;
   font-family: 'Mina', sans-serif;
 }
 
-article h2{
+article h2 {
   font-family: 'Mina', sans-serif;
   text-align: center;
 }
 
-article p{
+article p {
   font-family: 'Crimson Text', serif;
   font-size: 20px;
   text-align: justify;
 }
 
-main article img{
+main article img {
   margin: 10px;
   height: 350px;
 }
 
-.leftImg{
+.leftImg {
   float: left;
 }
 
-.rightImg{
+.rightImg {
   float: right;
   position: relative;
   height: 150px;
@@ -87,47 +88,154 @@ main article img{
 
 .monospacedText {
   background-color: #f1f1f1;
-  box-shadow:  0 0 0 1px rgba(0,0,0,.15);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
   border-radius: 5px;
   width: 615px;
   margin-left: 10px;
 }
-.monospacedText pre{
+
+.monospacedText pre {
   padding: 4px;
   font-family: 'Roboto Mono', monospace;
 }
 
 /*##########################Footer#################################*/
-footer{
+
+footer {
+  display: flex;
   background-color: #666;
-  float: left;
-  width:100%;
+  width: 100%;
+  justify-content: space-between;
 }
 
-footer section{
-  display: inline-block;
+footer section {
+  display: flex;
+  align-items: center;
 }
 
-.leftFooter a{
+.leftFooter a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
-  display: inline-block;
+  font-family: sans-serif;
 }
 
-.socialFooter{
-  float: right;
-  vertical-align: middle;
-  padding: 5px 2px 0 0;
+.socialFooter {
+  align-items: center;
 }
 
-.socialFooter a{
-  display: inline-block;
+.socialFooter a {
   padding: 2px;
 }
 
-.socialFooter a img{
-  padding: 0;
+.socialFooter a img {
   height: 35px;
+}
+
+/*##########################About Us#################################*/
+
+.mainSection {
+  padding-top: 33px;
+  background-color: #51546b;
+  color: white;
+  height: 94.8vh;
+}
+
+.flexContainer__aboutUs {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.aboutUs__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  padding-top: 40px;
+}
+
+.aboutUs__text {
+  padding-left: 20%;
+  padding-right: 20%;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+.buttonContainer {
+  margin: auto;
+}
+
+.mainButton {
+  outline: 0;
+  background-color: #51546b;
+  color: white;
+  font-size: 2em;
+  padding: 7px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  cursor: pointer;
+  transition: padding 0.1s;
+}
+
+.mainButton:hover {
+  padding: 9px;
+}
+
+/*##########################Contact Us#################################*/
+
+.flexContainer__contactUs {
+  flex-direction: column;
+}
+
+.contactUs__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  padding-top: 40px;
+}
+
+.flexContainer__contactUs>label {
+  padding: 10px;
+}
+
+.contactUsFormStyle__text {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactUsInput {
+  margin-top: 7px;
+  outline: 0;
+  background-color: #51546b;
+  color: white;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+  width: 500px;
+}
+
+.contactUsInput::placeholder {
+  color: rgb(240, 240, 240);
+}
+
+.mainButton__contuctUs {
+  font-size: 1em;
+}
+
+.flexContainer__login{
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 33px);
+}
+
+.loginItem{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
 }
