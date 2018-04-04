@@ -229,13 +229,13 @@ footer section {
   font-size: 1em;
 }
 
-.flexContainer__login{
+.flexContainer__login {
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 33px);
 }
 
-.loginItem{
+.loginItem {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
 }
