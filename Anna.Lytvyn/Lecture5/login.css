@@ -1,0 +1,132 @@
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-header{
+    width: 100%;
+    position: fixed;
+  }
+  
+  .page-header nav{
+    background-color: rgb(24, 211, 180); 
+  }
+  
+  .page-header nav a{
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 30px;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(32, 32, 32);
+  }
+  
+  .page-header nav a:hover{
+    background-color: rgb(219, 241, 238);
+    color: rgb(1, 12, 2);
+  }
+  
+  .top-image{
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .myform {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 70px;
+    width: 50%;
+    padding: 50px 50px;
+    font: 14px 'Montserrat';
+    border: 1px solid #242727;
+    overflow: hidden;
+}
+
+
+.myform label{
+    text-transform: uppercase;
+    color: rgb(32, 32, 32);
+}
+
+
+.username {
+    width: 100%;
+}
+
+.password {
+    width: 100%;
+}
+
+.button {
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(32, 32, 32);
+    background-color: rgb(24, 211, 180);
+    border: rgb(158, 158, 158) solid 1px;
+    box-shadow: 0 3px 3px #a3a2a2;
+    
+}
+
+.button:hover{
+    background-color: rgb(219, 241, 238);
+    cursor: pointer;
+}
+
+.signup {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(32, 32, 32);
+}
+
+
+  footer{
+    background-color: rgb(24, 211, 180);
+    width:100%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  footer section{
+    display: inline-block;
+  }
+  
+  .side-footer a{
+      text-decoration: none;
+      padding: 10px;
+      padding-right: 30px;
+      display: inline-block;
+      font-size: 17px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: rgb(32, 32, 32);
+  }
+  
+  .side-footer a:hover{
+      background-color: rgb(219, 241, 238);
+      color: rgb(1, 12, 2);
+  }
+  
+  .social-networks{
+    float: right;
+    vertical-align: middle;
+    padding: 5px 2px 0 0;
+  }
+  
+  .social-networks a{
+    display: inline-block;
+    padding: 2px;
+  }
+  
+  .social-networks a img{
+    padding: 0;
+    height: 28px;
+  }
+  
