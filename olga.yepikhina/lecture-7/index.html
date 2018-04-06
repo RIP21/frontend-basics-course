@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      font-size: 20px;
+    }
+
+    #grad {
+      height: 100vh;
+      background: linear-gradient(to bottom right, darkseagreen, lightgreen);
+    }
+
+    body>div {
+      padding: 1rem;
+    }
+
+    html,
+    body {
+      min-height: 100vh;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="grad">
+    <div class="container">
+      <div class="form">
+        <label>
+          Income
+          <input type="number" name="income" id="incomeInput">
+          <br>
+        </label>
+        <label>
+          Expenses
+          <input type="number" name="expenses" id="expensesInput">
+          <br>
+        </label>
+        <label>
+          Month to target
+          <input type="number" name="monthToTarget" id="monthToTarget">
+          <br>
+        </label>
+        <label>
+          Target sum
+          <input type="number" name="targetSum" id="targetSum">
+          <br>
+        </label>
+        <button id="calculateButton">Calculate</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script>
+    const budget = {
+      income: 5000,
+      expenses: 2400,
+      monthToTarget: 6,
+      targetSum: 9000
+    }
+
+    const incomeInput = document.querySelector('#incomeInput')
+    const expensesInput = document.querySelector('#expensesInput')
+    const monthToTargetInput = document.querySelector('#monthToTarget')
+    const targetSumInput = document.querySelector('#targetSum')
+    const calculateButton = document.querySelector('#calculateButton')
+    const result = document.querySelector('#result')
+
+    incomeInput.value = budget.income
+    expensesInput.value = budget.expenses
+    targetSumInput.value = budget.targetSum
+    monthToTargetInput.value = budget.monthToTarget
+
+    function onInputChange(inputEvent) {
+      const currentInput = inputEvent.target
+      budget[currentInput.name] = parseFloat(currentInput.value)
+    }
+
+    function processUserInput(callback) {
+      var name = prompt('Please enter your numbers')
+      callback(name)
+    }
+
+    const onCalculate = () => {
+      const { income, expenses, monthToTarget, targetSum } = budget
+      if ((income - expenses) * monthToTarget >= targetSum) {
+        targetMessage = 'You reach your goal'
+      } else {
+        targetMessage = "You don't reach your goal"
+      }
+      result.innerHTML = `Savings per month: ${income - expenses}<br />${targetMessage}`
+    }
+
+    incomeInput.addEventListener('input', onInputChange)
+    expensesInput.addEventListener('input', onInputChange)
+    monthToTarget.addEventListener('input', onInputChange)
+    targetSumInput.addEventListener('input', onInputChange)
+    calculateButton.addEventListener('click', onCalculate)
+  </script>
+</body>
+
+</html>
