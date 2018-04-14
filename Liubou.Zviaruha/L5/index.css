@@ -1,0 +1,308 @@
+.headerMain {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: rgb(121, 170, 182);
+  position: fixed;
+}
+
+.my-flex-box {
+  display: flex;
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-green {
+  background-color: limegreen;
+  color: rgb(72, 29, 172);
+  padding: 14px 50px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.4;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.button-green:hover {
+  opacity: 1
+}
+
+.button-yellow {
+  background-color: rgb(234, 238, 18);
+  color: rgb(72, 29, 172);
+  padding: 14px 50px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.4;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.button-yellow:hover {
+  opacity: 1
+}
+
+.button-red {
+  background-color: rgb(238, 18, 18);
+  color: rgb(72, 29, 172);
+  padding: 14px 50px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.4;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.button-red:hover {
+  opacity: 1
+}
+
+.heading--style {
+  font-size: 200%;
+  font: 'Acme', sans-serif;
+  color: green;
+}
+
+.image--stretched {
+  min-height: 200px;
+  height: 300px;
+  width: 1359px;
+  padding: 10px;
+  margin-left: -70px;
+}
+
+.image--left_float {
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+
+.image--right_float {
+  float: right;
+  width: 700px;
+  height: 500px;
+}
+
+.pre--code_style {
+  padding: 20px;
+  max-width: 600px;
+  background: #A9A9A9;
+  border: 4px double black;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer--padding {
+  margin-top: 450px;
+  padding: 0 100px 0 100px;
+}
+
+.image_icon--right_float {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+.paragraph--with_red_line {
+  border-left: 6px solid red;
+  background-color: darkgray
+}
+
+p {
+  font-family: 'Crete Round', serif;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button-login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 20px 0 0 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(-45deg)
+  }
+  50% {
+    transform: rotate(-135deg)
+  }
+  100% {
+    transform: rotate(-225deg)
+  }
+}
+
+@keyframes span-1 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+    border-color: #EE4D68
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes span-2 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(50px, 0);
+    border-color: #875678
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes span-3 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, -50px);
+    border-color: #FF9900
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes span-4 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 50px);
+    border-color: #00E4F6
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 100px;
+  top: 150px;
+  padding: 50px 0 0 50px;
+  animation: loader 6s infinite ease-in-out;
+}
+
+.loader span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 4px solid #0B1B48;
+}
+
+.loader span:nth-child(1) {
+  animation: span-1 2s ease-in-out infinite;
+}
+
+.loader span:nth-child(2) {
+  animation: span-2 2s ease-in-out infinite;
+}
+
+.loader span:nth-child(3) {
+  animation: span-3 2s ease-in-out infinite;
+}
+
+.loader span:nth-child(4) {
+  animation: span-4 2s ease-in-out infinite;
+}
+
+.heading--padding {
+  padding: 0 0 100px 500px;
+}
+
+.block {
+  width: auto;
+  background: rgb(132, 243, 132);
+  padding: 20px;
+  float: left;
+  position: relative;
+  top: 40px;
+  left: 400px;
+  line-height: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
