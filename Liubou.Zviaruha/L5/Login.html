@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="headerMain">
+
+    <div class="header">
+      <div class="my-flex-container">
+        <div class="my-flex-box">
+          <button class="button-green">
+            <a href="index.html" target="_blank"> Main </a>
+          </button>
+        </div>
+        <div class="my-flex-box">
+          <button class="button-yellow ">
+            <a href="About%20us.html" target="_blank"> About us </a>
+          </button>
+        </div>
+        <div class="my-flex-box">
+          <button class="button-red">
+            <a href="Contact%20us.html" target="_blank"> Contact us </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <form action="action_page.php">
+    <div class="imgcontainer">
+      <img src="https://static.vecteezy.com/system/resources/previews/000/140/024/non_2x/vector-avatar-icons.jpg" alt="Avatar"
+        class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname">
+        <b>Username</b>
+      </label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw">
+        <b>Password</b>
+      </label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="button-login">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot
+        <a href="#">password?</a>
+      </span>
+    </div>
+  </form>
+</body>
+
+</html>
