@@ -1,32 +1,36 @@
+<!doctype html>
 <html>
 
 <head>
-  <link rel="shortcut icon" href="duck.ico.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" href="index.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Syncopate|PT+Mono" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <title>Playground</title>
 </head>
 
 <body>
-  <!--Should be a fixed header-->
-  <header class="page-header">
+  <!--Should be a fixed header - done-->
+  <header class="header--fixed">
     <nav>
-      <a href="login.html"> Login </a>
+      <a href="#"> Login </a>
       <a href="#"> About us </a>
-      <a href="contact.html"> Contact us </a>
+      <a href="#"> Contact us </a>
     </nav>
   </header>
-  <figure class="top-image">
-    <!--Some 200px min-height image that takes all the horizontal space-->
-    <img src="figureimg.png">
+  <figure>
+    <!--Some 200px min-height image that takes all the horizontal space - done-->
+    <img class="image--stretched" src="http://v-kosmose.com/wp-content/uploads/2013/11/6975f540d86c9e34e1a457f4cf726735.jpg"
+      alt="Stars">
   </figure>
   <main>
     <article>
       <header>
-        <h1>Article header</h1>
+        <h1 class="heading--style">Article header</h1>
       </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, reprehenderit, voluptatum! A autem debitis dignissimos
+      <p class="paragraph--with_red_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, reprehenderit, voluptatum! A autem debitis dignissimos
         error explicabo fuga id illo itaque maxime molestiae nesciunt, non nostrum optio pariatur quis voluptate. Lorem ipsum
         dolor sit amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi autem
         eveniet itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor
@@ -40,15 +44,14 @@
         sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
         aut, autem corporis cupiditate, dignissimos distinctio esse eum excepturi facilis fuga in ipsa nam nostrum odit perspiciatis
         sapiente sequi soluta sunt.
-        <!--this image should be floated left, and all next should be on opposite side. Text should go around it-->
       </p>
-      <img class="img-left" src="tile.png">
+      <!--this image should be floated left, and all next should be on opposite side. Text should go around it-->
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi
-        autem eveniet itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Aliquid aut, autem corporis cupiditate, dignissimos distinctio esse
-        eum excepturi facilis fuga in ipsa nam nostrum odit perspiciatis sapiente sequi soluta sunt. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi autem eveniet
+        <img src="tile.png" class="image--left_float"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci
+        animi autem eveniet itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut, autem corporis cupiditate, dignissimos distinctio
+        esse eum excepturi facilis fuga in ipsa nam nostrum odit perspiciatis sapiente sequi soluta sunt. Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi autem eveniet
         itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor sit amet,
         consectetur adipisicing elit. Aliquid aut, autem corporis cupiditate, dignissimos distinctio esse eum excepturi facilis
         fuga in ipsa nam nostrum odit perspiciatis sapiente sequi soluta sunt. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -68,10 +71,8 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut, autem corporis cupiditate, dignissimos distinctio
         esse eum excepturi facilis fuga in ipsa nam nostrum odit perspiciatis sapiente sequi soluta sunt.
       </p>
-      <h2>Some heading!</h2>
-      <p>
-        <!-- should be floated right -->
-        <img class="img-right" src="tile.png">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque dicta dolorum, facere fuga fugiat hic incidunt
+      <h2 class="heading--style">Some heading!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque dicta dolorum, facere fuga fugiat hic incidunt
         ipsa iure magni maiores neque nesciunt numquam omnis quo reiciendis soluta temporibus tenetur Lorem ipsum dolor sit
         amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi autem eveniet
         itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor sit amet,
@@ -81,40 +82,36 @@
         repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Aliquid aut, autem corporis cupiditate, dignissimos distinctio esse eum excepturi facilis fuga in ipsa nam nostrum
         odit perspiciatis sapiente sequi soluta sunt.</p>
-
-
-      <div>
-        <p>
-          <b>Here is some monospaced code block</b>
-        </p>
-        <!--Make it nice with padding and a little grey background and borders.-->
-
-        <div class="mono-text">
-          <pre>document.addEventListener('click', () => console.log('topkek'))</pre>
-        </div>
-      </div>
+      <!-- should be floated right - done-->
+      <p>
+        <img src="tile.png" class="image--right_float"> Here is some monospaced code block
+      </p>
+      <!--Make it nice with padding and a little grey background and borders.- done-->
+      <pre class="pre--code_style">document.addEventListener('click', () => console.log('topkek'))</pre>
     </article>
   </main>
 
-  <!--two sections. On left this links on right social buttons (steal some images from internet)-->
+  <!--two sections. On left this links on right social buttons (steal some images from internet) done-->
   <footer>
-    <section class="side-footer">
-      <a href="login.html"> Login </a>
+    <section class="footer--padding">
+      <a href="#"> Login </a>
       <a href="#"> About us </a>
-      <a href="contact.html"> Contact us </a>
-    </section>
-    <section class="social-networks">
+      <a href="#"> Contact us </a>
       <!-- should be a aligned to the right social network buttons -->
       <a href="#">
-        <img src="facebook.png" alt="facebook" />
+        <img class="image_icon--right_float" src="https://www.saydaily.com/.image/t_share/MTM0ODg3OTkwOTMyNTc1NTA2/screen-shot-2015-12-03-at-22820-pmpng.png"
+        />
       </a>
       <a href="#">
-        <img src="instagram.png" alt="instagram" />
+        <img class="image_icon--right_float" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAe1BMVEX///89WpjW3Oo6VJPH0OE0UJEmSI33+PuFlLouT5I8WZgsTI+2wNeAkbt3irTw8veWpMa9xtvg5e9vg7BHX5mvutUAM4MnSY5IZJ+frczQ1uTn6/MfRYzFzeBAXZmLm8AWPYgSOYRZb6RleKlwgK1cc6alsMyRocRRaqJ3v8lYAAAETElEQVR4nO2d25aqOhBFlZgoAVEuAm0jXvr6/1949ujzsns3iamYHiQZa74jNUexREMBiwUAAAAAAAAAAAAAAAAAEBlVsvKUpHKgd6gbxj2FNfXhQb1V3wq29BYm2v74iF8pxTi3hJ5RyNLe78jSuQXuk0r7HvZi7upNEL2tX956fnz+z9jmloJ1N3ftZojazq9qPP7+/BvW2J0PEz535abwxE6QybkrN0MyW8G5KzcldkF0EIK+E7sgMghB34ldEBmEoO/ELhhUBiVLu2G4fDH8oetSzhmT2n9ugQhKxrNsvL0U5/3TFx/nj3NRvL683fqGZZn6/3cQgrxLP7fv5XG3/reO9e65SlZlvlEa+i8o08tyU1Y/3L5xylRb+y448ovc/+zcv5QqQd87KMXn4a5dwIIpPz8b1ROm4Dj0phdPlIJeZ/DyZrxoG2IH5VCY1xOioNgQ6glPcBwKk2/Pu4K+ZnDMPneUeoLrIO9IfsEJyoE4IRGaYFdTAqgT9DODjK2I9QTWwW5PrScsQbkkFxWWoCD8hLkn6GUGryd3gj52kC/p9QQlOGzjFpSCfoQGlUE+mv2J/4Zy0cnDDmZ3f8Wsd8/HVf435TmcZUPZ7fWCVbn5lGk2fEM92umfYKZfhznc0izlxoNW/mWQce0M6/7CaUNk/gn2uor2V/LneSd40yylJUvyfr0T5C/qs8R6T56j9i+DvFYvVuxuytOdEv8EX9WCVUqfUvVOMN2qT4OlxaC4f4IbteC7IHfQvwzqBPexd3BrcTMKBAMXDCuD6OAEEAxcEBmEoGsgSAMZhKBrIEgDGfxNQZZNcNFMOBXXqS3+oFkMnlEwLcp8As2AxfEwtUGel09LpeGMgsOT1a4nzZmqnjkzOJCHRZSU6vXEOASfsrgF12f1clscgrVyST+ODO5uXl7hdSi49PLeJXeCVaouJwrBU6csJ44MHgb1XqIQPF8iF6xj76DmynYcGZSaJ0zFILhTf4nGIZgMmivbMQiWV/VOosjgQSMYRQc/NGeJKAS3uuGLCATXL5qzRAwZfL7piolAMGl0808RCJ60tUQgqB3RmzOD7FZMUL9rhvFep7Z487WDIxMTXDXXJup2agv9s1zDurqEacMf4PogBF0DQRrIIARdA0EayCAEXQNBGsggBF0DQRrIIARdA0EayCAEXQNBGsggBF0DQRrIIARdA0EayCAEXQNBGsggBF0DQRrIIARdA0EayCAEXQNBGsggBF0DQRr2GaQ/ENoMXwT1Nys8gOtDlNsJVs1vHaOOBVlj/BbK79QW92gY4VhQ1HZ+i7wdf8Fu6VpwbHNLwUVvkQcT3AqK3tZvcZTqp/A8glPBVGpfP6KnlOI3jlKHgqOQpu/xnWTVt8L9d6kzQSba/oH+fXGoG8YdM2zV75soBvPPYU1NfM3mJFWycswp2SlJTuafk1ie/wAAAAAAAAAAAAAAAAAAf/kPjTijWpDQi6MAAAAASUVORK5CYII="
+        />
       </a>
       <a href="#">
-        <img src="twitter.png" alt="twitter" />
+        <img class="image_icon--right_float" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png"
+        />
       </a>
     </section>
+    <br>
   </footer>
 </body>
 

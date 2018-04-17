@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Playground</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="./index.js"></script>
+
+</head>
+<style>
+  * {
+    font-size: 20px;
+  }
+
+  body>div {
+    padding: 1rem;
+  }
+
+</style>
+
+<body>
+  <div class="form">
+    <label>
+      Income
+      <input type="number" name="income" id="incomeInput">
+      <br>
+    </label>
+    <label>
+      Expenses
+      <input type="number" name="expenses" id="expensesInput">
+      <br>
+    </label>
+    <label>
+      Sum
+      <input type="number" name="sum" id="targetSum">
+      <br>
+    </label>
+    <label>
+      Month
+      <input type="number" name="month" id="monthToTarget">
+      <br>
+    </label>
+    <button id="calculateButton">Calculate</button>
+  </div>
+  <div id="result"></div>
+  <div id="result_1"></div>
+  <script>
+    const budget = {
+      income: 5000,
+      expenses: 2400,
+      sum: 10000,
+      month: 3
+    }
+
+    const incomeInput = document.querySelector("#incomeInput")
+    const expensesInput = document.querySelector("#expensesInput")
+    const calculateButton = document.querySelector("#calculateButton")
+    const result = document.querySelector("#result")
+    const targetSum = document.querySelector("#targetSum")
+    const monthToTarget = document.querySelector("#monthToTarget")
+    const result_1 = document.querySelector("#result_1")
+
+    incomeInput.value = budget.income
+    expensesInput.value = budget.expenses
+    targetSum.value = budget.sum
+    monthToTarget.value = budget.month
+
+    function onInputChange(inputEvent) {
+      const currentInput = inputEvent.target
+      budget[currentInput.name] = parseFloat(currentInput.value)
+    }
+
+    const onCalculate = () => {
+      const {
+        income,
+        expenses,
+        sum,
+        month
+      } = budget 
+      result.innerHTML = `Savings per month: ${income - expenses}`
+      if ((income - expenses) < (sum/month)) {
+        result_1.innerHTML = `Target Sum cannot be saved`
+      } 
+      else {
+        result_1.innerHTML = `Target Sum can be saved`
+      }
+    }
+    
+
+    incomeInput.addEventListener('input', onInputChange)
+    expensesInput.addEventListener('input', onInputChange)
+    calculateButton.addEventListener('click', onCalculate)
+    targetSum.addEventListener('input', onInputChange)
+    monthToTarget.addEventListener('input', onInputChange)
+
+  </script>
+</body>
+
+</html>

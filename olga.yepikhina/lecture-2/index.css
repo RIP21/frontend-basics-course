@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding-top: 70px;
+  height: 100vh;
+  background-color: lightgrey;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://d.wpimg.pl/981224025-928787179/kosmos.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  display: flex;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  color: white;
+  padding-left: 10px;
+  box-shadow: 2px 2px 11px 0 black;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+.header__links {
+  display: flex;
+}
+
+.header__links li {
+  display: block;
+  margin: 20px;
+}
+
+article {
+  font-family: 'Raleway', sans-serif;
+  max-width: 800px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+pre {
+  padding: 5px 10px;
+  background-color: lightslategrey;
+  border: 5px green solid;
+  font-family: 'Source Code Pro', monospace;
+  text-overflow: ellipsis;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.kittens {
+  max-width: 800px;
+
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+img {
+  max-width: 200px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: palevioletred;
+  box-shadow: -2px -2px 11px 0 black;
+}
+
+.footer__container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer a {
+  margin: 5px;
+}
+
+.footer__section {
+  padding: 20px;
+}
+

@@ -1,23 +1,23 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="duck.ico.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="index.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Syncopate|PT+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Mina|Roboto+Mono" rel="stylesheet">
   <title>Playground</title>
 </head>
 
 <body>
   <!--Should be a fixed header-->
-  <header class="page-header">
+  <header class="pageHeader">
     <nav>
-      <a href="login.html"> Login </a>
+      <a href="#"> Login </a>
       <a href="#"> About us </a>
-      <a href="contact.html"> Contact us </a>
+      <a href="#"> Contact us </a>
     </nav>
   </header>
-  <figure class="top-image">
+  <figure class="topFigure">
     <!--Some 200px min-height image that takes all the horizontal space-->
     <img src="figureimg.png">
   </figure>
@@ -41,8 +41,8 @@
         aut, autem corporis cupiditate, dignissimos distinctio esse eum excepturi facilis fuga in ipsa nam nostrum odit perspiciatis
         sapiente sequi soluta sunt.
         <!--this image should be floated left, and all next should be on opposite side. Text should go around it-->
+        <img class="leftImg" src="tile.png">
       </p>
-      <img class="img-left" src="tile.png">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi
         autem eveniet itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum
@@ -71,7 +71,7 @@
       <h2>Some heading!</h2>
       <p>
         <!-- should be floated right -->
-        <img class="img-right" src="tile.png">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque dicta dolorum, facere fuga fugiat hic incidunt
+        <img class="rightImg" src="tile.png"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque dicta dolorum, facere fuga fugiat hic incidunt
         ipsa iure magni maiores neque nesciunt numquam omnis quo reiciendis soluta temporibus tenetur Lorem ipsum dolor sit
         amet, consectetur adipisicing elit. Ex id maxime officia qui temporibus. Accusantium, adipisci animi autem eveniet
         itaque libero molestiae nulla repellat sint velit! Doloremque incidunt molestias quaerat. Lorem ipsum dolor sit amet,
@@ -89,7 +89,7 @@
         </p>
         <!--Make it nice with padding and a little grey background and borders.-->
 
-        <div class="mono-text">
+        <div class="monospacedText">
           <pre>document.addEventListener('click', () => console.log('topkek'))</pre>
         </div>
       </div>
@@ -98,21 +98,21 @@
 
   <!--two sections. On left this links on right social buttons (steal some images from internet)-->
   <footer>
-    <section class="side-footer">
-      <a href="login.html"> Login </a>
+    <section class="leftFooter">
+      <a href="#"> Login </a>
       <a href="#"> About us </a>
-      <a href="contact.html"> Contact us </a>
+      <a href="#"> Contact us </a>
     </section>
-    <section class="social-networks">
+    <section class="socialFooter">
       <!-- should be a aligned to the right social network buttons -->
       <a href="#">
-        <img src="facebook.png" alt="facebook" />
+        <img src="face.jpg" />
       </a>
       <a href="#">
-        <img src="instagram.png" alt="instagram" />
+        <img src="inst.png" />
       </a>
       <a href="#">
-        <img src="twitter.png" alt="twitter" />
+        <img src="link.png" />
       </a>
     </section>
   </footer>
