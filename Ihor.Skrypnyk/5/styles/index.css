@@ -261,6 +261,14 @@ input[type=password] {
   cursor: pointer;
 }
 
+.imgcontiner h1 {
+  text-align: center;
+}
+
+.modal-container input[type="checkbox"] {
+  margin: 26px 30px;
+}
+
 /* Add Zoom Animation */
 
 .animate {
