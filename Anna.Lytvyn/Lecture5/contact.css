@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+
+.page-header {
+  width: 100%;
+  position: fixed;
+}
+
+.page-header nav {
+  background-color: rgb(24, 211, 180);
+}
+
+.page-header nav a {
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+
+.page-header nav a:hover {
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
+}
+
+.top-image {
+  margin: 0;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article header h1 {
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article h2 {
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+}
+
+article p {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-indent: 50px;
+  padding: 10px;
+  margin: 0;
+}
+
+.call {
+  position: relative;
+  overflow: hidden;
+  padding-left: 50px;
+  background-image: url('call.png');
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+}
+
+.call:hover {
+  transform: scale(1.1);
+}
+
+.call h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.email {
+  padding-left: 50px;
+  background-image: url('email.png');
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+}
+
+.email:hover {
+  transform: scale(1.1);
+}
+
+.email h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgb(24, 211, 180);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer section {
+  display: inline-block;
+}
+
+.side-footer a {
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+
+.side-footer a:hover {
+  background-color: rgb(219, 241, 238);
+  color: rgb(1, 12, 2);
+}
+
+.social-networks {
+  float: right;
+  vertical-align: middle;
+  padding: 5px 2px 0 0;
+}
+
+.social-networks a {
+  display: inline-block;
+  padding: 2px;
+}
+
+.social-networks a img {
+  padding: 0;
+  height: 28px;
+}
