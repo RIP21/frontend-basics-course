@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Currency converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="inputBox">My currency:
+      <select class="myCurrency">
+        <option value="UAH">UAH</option>
+        <option value="PLN">PLN</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <br>
+      <br>
+      <input type="number" placeholder="Type amount here" class="inputField inputValue" value="">
+    </div>
+    <div class="inputBox">
+      Convert to:
+      <select class="convertTo">
+        <option value="UAH">UAH</option>
+        <option value="PLN">PLN</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <br>
+      <br>
+      <input type="number" class="inputField outputValue" value="">
+    </div>
+    <button type="submit" class="submitButton">Convert</button>
+  </div>
+  <script>
+    let returnedObject = {};
+
+    const values = {
+      input: 0,
+      output: 0,
+      firstCurrency: "UAH",
+      secondCurrency: "UAH",
+      rate: () => returnedObject[values.secondCurrency]/returnedObject[values.firstCurrency]
+    }
+
+    const myCurrency = document.querySelector('.myCurrency');
+    const convertTo = document.querySelector('.convertTo');
+    const inputValue = document.querySelector('.inputValue');
+    const outputValue = document.querySelector('.outputValue');
+    const submit = document.querySelector('.submitButton');
+
+
+    const updateRates = () => {fetch('http://data.fixer.io/api/latest?access_key=6531493c208e3d8a9397435686152c23&format=1')
+      .then(function (response) {
+        return response.json();
+      }).then(function (myJson) {
+        if (myJson.success === true) {
+          returnedObject = myJson.rates;
+        } else (alert("something went wrong!"))
+      }).catch(err => console.log("Link does not work"));
+      };
+    
+
+    const onCalculate = () => {
+      values.input = inputValue.value;
+      values.output = values.input * values.rate();
+      outputValue.value = values.output;
+      }
+      
+    updateRates();
+    setInterval(updateRates, 10000);
+
+    submit.addEventListener('click', onCalculate)
+    myCurrency.addEventListener('change', (e) => {
+      values.firstCurrency = e.target.value;
+    })
+    convertTo.addEventListener('change', (e) => {
+      values.secondCurrency = e.target.value;
+    })
+
+  </script>
+</body>
+
+</html>
