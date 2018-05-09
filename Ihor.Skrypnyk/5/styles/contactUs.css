@@ -1,0 +1,56 @@
+.container--contact {
+  flex-grow: 1;
+  margin: 100px auto 50px auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  background-color: aliceblue;
+  width: 50vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container--contact-button {
+  background-color: lightblue;
+  color: white;
+  font-size: 18px;
+  padding: 14px 20px;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.5em;
+  width: 100%;
+  box-shadow: 1px 9px #999;
+}
+.container--contact-button:hover {
+  background-color: #e08524;
+}
+
+.container--contact-button:active {
+  box-shadow: 1 5px #666;
+  transform: translateY(4px);
+}
+
+.container--contact input:not([type='checkbox']) {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container--contact input:focus {
+  background-color: lightblue;
+}
+
+/* Modal */
+
+.modal-container a {
+  text-decoration: none;
+  float: right;
+  margin-right: 34px;
+  margin-top: 26px;
+}

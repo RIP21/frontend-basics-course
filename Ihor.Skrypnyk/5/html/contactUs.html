@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
+  <link rel="stylesheet" href="../styles/index.css" type="text/css">
+  <link rel="stylesheet" href="../styles/contactUs.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karma|Lato|Ubuntu" rel="stylesheet">
+  <title>About Us</title>
+</head>
+
+<body>
+  <!--Should be a fixed header-->
+  <header class="header--sticky">
+    <nav>
+      <a href="index.html"> Main page </a>
+      <button class="header-loginButton" onclick="document.getElementById('modal-wrapper').style.display='block'"> LOGIN </button>
+      <a href="aboutUs.html"> About us </a>
+      <a href="contactUs.html"> Contact us </a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+
+  <div class="container--contact">
+
+    <h2>Contact us</h2>
+    <input class="container--contact-inputName" type="text" name="name" placeholder="Name">
+    <input class="container--contact-inputEmail" type="email" name="email" placeholder="Email">
+    <input class="container--contact-inputPhone" type="phone" name="phone" placeholder="Phone">
+    <input class="container--contact-inputMessage" type="text" name="message" placeholder="Your message ...">
+    <div><input type="checkbox" style="margin:26px 30px;"> Send me a copy via e-mail</div>
+    <button class="container--contact-button" type="submit">Send</button>
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer--left">
+      <button class="footer-loginButton" onclick="document.getElementById('modal-wrapper').style.display='block'"> Login </button>
+      <a href="aboutUs.html"> About us </a>
+      <a href="contactUs.html"> Contact us </a>
+    </section>
+    <section class="footer--right">
+      <!-- should be a aligned to the right social network buttons -->
+      <a href="#">
+        <img class="footer--right logos" src="https://shop.az/site/img/svg/facebook-round.svg" />
+      </a>
+      <a href="#">
+        <img class="footer--right logos" src="http://badges.instagram.com/static/images/ig-badge-32.png" />
+      </a>
+      <a href="#">
+        <img class="footer--right logos" src="http://pngimg.com/uploads/twitter/twitter_PNG34.png" />
+      </a>
+    </section>
+  </footer>
+  <!-- Modal Login form -->
+
+  <div id="modal-wrapper" class="modal">
+
+    <form class="modal-content animate">
+
+      <div class="imgcontainer">
+        <span class="close" id="close" title="Close PopUp">&times;</span>
+        <h1>Login to the website</h1>
+      </div>
+
+      <div class="modal-container">
+        <input type="text" placeholder="Enter Username" name="uname">
+        <input type="password" placeholder="Enter Password" name="psw">
+        <button class="modal-button" type="submit">Login</button>
+        <input type="checkbox"> Remember me
+        <a href="#">Forgot Password ?</a>
+      </div>
+
+    </form>
+  </div>
+  <script>
+    const modal = document.querySelector('#modal-wrapper');
+    const close = document.querySelector('#close');
+
+
+    function closeModal (event) {
+      if (event.target === modal || event.target === close) {
+        modal.style.display = "none";
+      }
+    }
+
+    modal.addEventListener('click', closeModal);
+
+  </script>
+
+</body>
+</html>
