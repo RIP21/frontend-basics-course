@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Currency converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <h2>Currency converter</h2>
+  <div class="container-main">
+    <div class="container-left">
+      <form>
+        <h3>Enter amount</h3>
+        <input type="text" id="input">
+        <select id="selectFrom"></select>
+      </form>
+    </div>
+    <div class="container-right">
+      <form>
+        <h3>You will receive</h3>
+        <input type="text" id="result" readonly><br>
+        <select id="selectTo"></select>
+      </form>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="swap" id="swap">Swap</button>
+    <button class="submit" id="submit">Submit</button>
+  </div>
+
+
+</body>
+</html>
