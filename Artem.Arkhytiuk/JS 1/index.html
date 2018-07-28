@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playground</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="./index.js"></script>
+
+</head>
+<style>
+  * {
+    font-size: 20px;
+  }
+
+  body > div {
+    padding: 1rem;
+  }
+</style>
+<body>
+<div class="form">
+  <label>
+    Income
+    <input type="number" name="income" id="incomeInput"><br>
+  </label>
+  <label>
+    Expenses
+    <input type="number" name="expenses" id="expensesInput"><br>
+  </label>
+  <label>
+    Target
+    <input type="number" name="targetSum" id="targetSumInput"><br>
+  </label>
+  <label>
+    Monthes to target
+    <input type="number" name="monthesTarget" id="monthesTargetInput"><br>
+  </label>
+  <button id="calculateButton">Calculate</button>
+</div>
+<div id="result"></div>
+<script>
+  const budget = {
+    income: 5000,
+    expenses: 2400,
+    targetSum: 30000,
+    monthesTarget: 12
+  }
+
+  const incomeInput = document.querySelector("#incomeInput")
+  const expensesInput = document.querySelector("#expensesInput")
+  const targetInput = document.querySelector("#targetSumInput")
+  const monthesTargetInput = document.querySelector("#monthesTargetInput")
+  const calculateButton = document.querySelector("#calculateButton")
+  const result = document.querySelector("#result")
+
+  incomeInput.value = budget.income
+  expensesInput.value = budget.expenses
+  targetInput.value = budget.targetSum
+  monthesTargetInput.value = budget.monthesTarget
+
+  function onInputChange(inputEvent) {
+    const currentInput = inputEvent.target
+    budget[currentInput.name] = parseFloat(currentInput.value)
+  }
+
+  const onCalculate = () => {
+    const { income, expenses, targetSum, monthesTarget } = budget
+    if (monthesTarget >= targetSum/(income-expenses)){
+    result.innerHTML = `Your savings are ${income-expenses} per month.<br> You will save ${targetSum} 
+    PLN in ${~~(targetSum/(income-expenses))} monthes.`;
+    } else {
+      result.innerHTML = `You would not manage. Spend less or earn more!`
+    }
+    }
+
+  incomeInput.addEventListener('input', onInputChange)
+  expensesInput.addEventListener('input', onInputChange)
+  targetInput.addEventListener('input', onInputChange)
+  monthesTargetInput.addEventListener('input', onInputChange)
+  calculateButton.addEventListener('click', onCalculate)
+</script>
+</body>
+</html>

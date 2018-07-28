@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  <title>Playground</title>
+</head>
+
+<body>
+  <header class="pageHeader flexContainer">
+    <nav class="flexContainer">
+      <a href="index.html"> Home </a>
+      <a href="aboutUs.html"> About us </a>
+      <a href="contactUs.html"> Contact us </a>
+      <a href="loginPage.html" class="navigationRight"> Login </a>
+    </nav>
+  </header>
+  <main class="mainSection mainSection">
+    <div class="flexContainer flexContainer__contactUs">
+      <h1 class="contactUs__header">Give us your information and we will cotact you!</h1>
+      <form class="flexContainer flexContainer__contactUs contactUsFormStyle__text">
+        <label>
+          Your name:
+          <br>
+          <input type="text" placeholder="Name" class="contactUsInput">
+        </label>
+        <label>
+          Your phone number:
+          <br>
+          <input type="tel" placeholder="123-456-789" class="contactUsInput">
+        </label>
+        <label>
+          Your e-mail:
+          <br>
+          <input type="mail" placeholder="example@example.com" class="contactUsInput">
+        </label>
+        <label>
+          Your sex:
+          <input type="radio" name="sex" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="sex" value="female">
+          <label for="female">Female</label>
+          <input type="radio" name="sex" value="other">
+          <label for="other">Other</label>
+        </label>
+        <div class="buttonContainer">
+          <input type="button" value="Submit!" class="mainButton mainButton__contuctUs">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
