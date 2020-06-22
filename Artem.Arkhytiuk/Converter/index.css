@@ -1,0 +1,40 @@
+body{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select{
+  float: right;
+}
+
+.container{
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px rgba(194,190,194,1);
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.inputBox{
+  margin-right: 5px;
+  width: 90%;
+}
+
+.inputField{
+  width: 90%;
+}
+
+.submitButton{
+  align-self: center;
+}
+
